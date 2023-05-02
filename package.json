@@ -1,0 +1,28 @@
+{
+  "name": "nightingale",
+  "version": "0.0.1",
+  "description": "Prototype for Nightingale web app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolastyllis/nightingale.git"
+  },
+  "author": "nikolastyllis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikolastyllis/nightingale/issues"
+  },
+  "homepage": "https://github.com/nikolastyllis/nightingale#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.9",
+    "openai": "^3.2.1",
+    "path": "^0.12.7"
+  }
+}
