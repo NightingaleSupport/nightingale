@@ -14,7 +14,11 @@
     </div>
     <div class="q-section">
         <h1>Ask Nightingale a question about Tech E Challenge 2023!</h1>
-        <input type="text" class="q-input"  autofocus id="input-box">
+        <div class="inputsection">
+          <input type="text" class="q-input"  autofocus id="input-box">
+          <button type="button" onclick="sendRequest()" class="sendButton">></button>
+        </div>
+        <h1 id="question"></h1>
         <h2 id="display"></h2>
     </div>
 	<script src="/javascript/index.js"></script>

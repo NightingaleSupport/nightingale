@@ -43,7 +43,7 @@ h2 {
     font-weight: lighter;
     font-size:large;
     padding: 2%;
-    margin: 5%;
+    margin: 0px 5% 5% 5%;
     border: 1px solid white;
     border-radius: 10px;
 }
@@ -67,8 +67,20 @@ h2 {
     animation: shake 0.2s ease-in-out 0s 2;
 }
 
-.q-input { padding-left:10px; font-family: 'Courier New', Courier, monospace; padding-top:5px; padding-bottom:5px; font-size:20px; border-color:#cccccc; border-style:solid; border-radius:50px; border-width:0px;  }
-.q-input:focus { outline:none; } 
+.q-input { 
+    padding-left:15px; 
+    font-family: 'Courier New', Courier, monospace; 
+    padding-top:5px; 
+    padding-bottom:5px; 
+    font-size:20px; 
+    border-color:#cccccc;
+    border-style:solid; 
+    border-radius:50px; 
+    border-width:0px;  
+}
+.q-input:focus { 
+    outline:none; 
+} 
 
 @keyframes fadeIn {
     to {
@@ -79,4 +91,31 @@ h2 {
 .fade-in{
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
+}
+
+.sendButton {
+    aspect-ratio: 1/1;
+    font-weight:900;
+    text-align: center;
+    border-radius: 50%;
+    background-color:white;
+    color: #4B6EB2;
+    border-color: white;
+    cursor:pointer;
+    padding-left:10px; 
+    padding-right:10px; 
+    font-family: 'Courier New', Courier, monospace; 
+    padding-top:5px; 
+    padding-bottom:5px; 
+    font-size:20px; 
+    border-color:#cccccc;
+    border-style:solid; 
+    border-radius:50px; 
+    border-width:0px;  
+}
+
+#question {
+    font-weight: bolder;
+    font-size: 32px;
+    margin-top: 20px;
 }
