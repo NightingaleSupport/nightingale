@@ -42,7 +42,10 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
     font-size:large;
-    padding: 10%;
+    padding: 2%;
+    margin: 5%;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 .splash.display-none {
