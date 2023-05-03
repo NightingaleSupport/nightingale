@@ -12,6 +12,7 @@
 
 .main {
     background-color: #4B6EB2;
+    padding-top: 10%;
 }
 
 @keyframes shake {
@@ -43,8 +44,6 @@ h2 {
     font-size:large;
     padding: 2%;
     margin: 0px 5% 5% 5%;
-    border: 1px solid white;
-    border-radius: 10px;
 }
 
 .splash.display-none {
@@ -114,7 +113,7 @@ h2 {
 }
 
 #question {
-    font-weight: bolder;
+    font-weight:lighter;
     font-size: 32px;
     margin-top: 20px;
 }
