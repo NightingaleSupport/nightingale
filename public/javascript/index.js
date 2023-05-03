@@ -37,7 +37,7 @@ function sendRequest(){
           } 
         }
       };
-    display.innerText = '...';
+    display.innerText = 'loading answer...';
     xhr.send(JSON.stringify({
         value: text
     }));
