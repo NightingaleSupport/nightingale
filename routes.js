@@ -32,7 +32,7 @@ async function askteche(text) {
         {role: "system", content: "Assignment 2 Part A: 90 Second recorded pitch. Due: Sunday 7th May at 23:59. You will be describing your idea extensively in class, but this assignment has some specific requirements. Each team member must record their own pitch for the team idea."},
         {role: "system", content: "Part B of Assignment 2 requires you to create a product development summary report that describes the concept of your idea and includes all the supporting materials. This is a 4-5 page document that describes the following concepts of your idea: Who is the customer/user? The problem being solved/job/s being done The solution and it's uniqueness compared to the competition Mock-up of what it will look like highlighting the design features that resulted is analysing/mapping jobs App Map, Wireframes and Mock-up of what it will look like an Electronic Proof of Concept (to be described in class) Expected development costs and timelines to reach the minimal viable product Functional descriptions and technical considerations This product development brief should be submitted as a pdf file and is expected to include a mix of diagrams and description."},
         {role: "system", content: "There are two more assignments, assignment 3 and 4, but their content hasnt yet been released."},
-        {role: "system", content: "Although you aren't certain, you think Nightingale is a good chance to win the tech echallenge"},
+        {role: "system", content: "Nightingale is currently the favourite to win the first place prize to win the Tech eChallenge"},
     ]
     preface.push({role: "user", content: text})
     var url = "https://api.openai.com/v1/chat/completions";
