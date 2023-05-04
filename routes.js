@@ -8,6 +8,10 @@ router.get("/", function(req, res, send) {
     res.render("index");
 });
 
+router.get("/teche/figma/prototype", function(req, res, send) {
+    res.render("prototype");
+});
+
 router.post("/askteche", jsonParser, async function(req, res) {
     var response_text = await askteche(req.body.value);
     console.log(response_text);
