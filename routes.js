@@ -8,8 +8,14 @@ router.get("/", function(req, res, send) {
     res.render("index");
 });
 
-router.get("/teche/figma/prototype", function(req, res, send) {
-    res.render("prototype");
+router.get("/teche/figma/prototype/will", function(req, res, send) {
+    res.render("prototype-will");
+});
+router.get("/teche/figma/prototype/nik", function(req, res, send) {
+    res.render("prototype-nik");
+});
+router.get("/teche/figma/prototype/eddie", function(req, res, send) {
+    res.render("prototype-eddie");
 });
 
 router.post("/askteche", jsonParser, async function(req, res) {

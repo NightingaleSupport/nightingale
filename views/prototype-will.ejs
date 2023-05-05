@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/nightingale.svg">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nightingale</title>
+    <style>
+      * {
+        font-family: 'Courier New', Courier, monospace;
+      }
+    </style>
+    <link rel="stylesheet" href="/stylesheets/prototype.css">
+  </head>
+  <body>
+    <div class="first-container">
+      <h1>This is an Embedding of our Figma Prototype (and a video tour)</h1>
+      <h1>Go Full Screen for a better experience</h1>
+    </div>
+    <div class="container">
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEo6zX8AlXc2JWBkCcGYwKg%2FProof-of-Concept%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D129-3295%26viewport%3D6639%252C9579%252C0.16%26scaling%3Dmin-zoom%26starting-point-node-id%3D129%253A3295%26show-proto-sidebar%3D1" allowfullscreen></iframe>  </body>
+      <iframe width="800" height="450" src="https://www.youtube.com/embed/Vocf1uNKgCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <h2>Some Design Decisions</h2>
+    <h3>Home Page</h3>
+    <p>
+      Dashboard illustrating high-level performance of all support bots one might have linked to the account. Included because of my (Will Davis’s) history with attempting to report on a support bot’s success rate. As users may receive answers before submitting a support ticket, if a reporting system is not provided, it is hard to quantify the value of the product. If we provide hard numbers demonstrating the products success for a company, they will be more likely to recommend it and less likely to churn.
+    </p>
+    <h3>Playbook Designer</h3>
+    <p>
+      We wanted to provide users with a choice of model for a few different reasons. Mainly cost. GPT-4 while being the best, is  expensive to run, a company might chose to sacrifice some performance and hallucinations to save some money. Choosing a model provided by Open AI would also grant them access to your data to further train more models. If a companies data is sensitive, they might opt to use an open-source model like chatterbox, or similar.
+
+      The interface will be drag and drop, but cant do this in Figma. 
+
+      The view in product button is purely there so you can see the version implemented in jira. 
+    </p>
+    <h3>Individual Conversations and Dashboard Pages</h3>
+    <p>
+      The Conversation Logs and Detailed Dashboards for an individual support bot is important to not only verify the bot’s necessity and performance, but also acts as a sanity check. 
+      Customers can view failed conversations (or the dashboard) and note which concepts they might need to improve their knowledge base on. Or perhaps pick up on the unlikely situation of AI Hallucinations. 
+
+      While we are unsure of the exact pricing model, we think it may be usage based. (because of the costs of utilising a model), therefore showing projected and current monthly costs is important.
+
+      We also wanted to provide users with easy ways to benchmark their bot against other customers. Purely a number saying your bot solves 60% of customer questions is useless without a number to compare that too.
+    </p>
+    <h3>Inputs Page</h3>
+    <p>
+      This is obviously a massive oversimplification of how complex this would be, but we want to create a simple abstraction for including all of your companies data available.
+    </p>
+    <h3>Events Page</h3>
+    <p>
+      Same here with events. Massive oversimplification, there would have to be a bit more configuring for each action (e.g. specifying how the ticket name / body should be formatted, if any custom fields should be set, etc.)
+    </p>
+    <h3>Support Bot Interface</h3>
+    <p>
+      We plan on allowing customers to alter the colour, name, and icon of an individual support bot, allowing it to conform to the rest of their design screen. While you may be used to seeing the floating dots in the bottom right of your screen for a support bot, we will not make this mandatory, as we believe these have negative connotations.
+
+      We will provide an API that allows them to open the support bot from any event.
+
+      We have increased the size of the support bot in this prototype so that you can see the text easier. We expect this to be a bit smaller.
+    </p>
+</html>
