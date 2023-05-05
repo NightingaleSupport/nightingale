@@ -8,6 +8,9 @@ router.get("/", function(req, res, send) {
     res.render("index");
 });
 
+router.get("/teche/figma/prototype", function(req, res, send) {
+    res.render("prototype-blank");
+});
 router.get("/teche/figma/prototype/will", function(req, res, send) {
     res.render("prototype-will");
 });
