@@ -21,6 +21,10 @@ router.get("/teche/figma/prototype/eddie", function(req, res, send) {
     res.render("prototype-eddie");
 });
 
+router.get("/contact", function(req,res,send) {
+    res.render("contact");
+})
+
 router.post("/askteche", jsonParser, async function(req, res) {
     var response_text = await askteche(req.body.value);
     console.log(response_text);
